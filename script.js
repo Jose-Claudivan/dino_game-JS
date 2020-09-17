@@ -2,6 +2,8 @@ const dino = document.querySelector('.dino');
 const background = document.querySelector('.background');
 let isJumping = false;
 let position = 0;
+let points = 0;
+let score = document.querySelector('.score');
 
 function handleKeydown(event) {
     if (event.keyCode === 32) {
@@ -13,6 +15,9 @@ function handleKeydown(event) {
 
 function jump() {  
     isJumping = true;
+
+    points++;
+    score.textContent = "Score: " + points * 10;
 
     let upInterval = setInterval(() => {
         if (position >= 150) {
@@ -56,7 +61,7 @@ function createCactus() {
         }
         else {
             cactusPosition -= 7;//velocidade do cacto
-            cactus.style.left = cactusPosition + 'px';
+            cactus.style.left = cactusPosition + 'px';        
         }
     }, 20);
 
