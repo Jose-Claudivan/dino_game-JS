@@ -3,9 +3,9 @@ body {
 }
 
 .dino {
-    width: 60px;
-    height: 60px;
-    background-image: url(./img/dino.png);
+    width: 80px;
+    height: 100px;
+    background-image: url(./img/sonic.png);
     position: absolute; /*elemento fica na posição definida independente do que tem em volta*/
     bottom: 0;
 }
@@ -15,7 +15,7 @@ body {
     width: 60px;
     height: 60px;
     bottom: 0;
-    background-image: url(./img/cactus.png);
+    background-image: url(./img/caranguejo.png);
 }
 
 .game-over {

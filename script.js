@@ -3,7 +3,7 @@ const background = document.querySelector('.background');
 let isJumping = false;
 let position = 0;
 
-function handleKeyup(event) {
+function handleKeydown(event) {
     if (event.keyCode === 32) {
         if (!isJumping) {
             jump();
@@ -65,4 +65,4 @@ function createCactus() {
 }
 
 createCactus();
-document.addEventListener('keyup', handleKeyup);
+document.addEventListener('keydown', handleKeydown);
