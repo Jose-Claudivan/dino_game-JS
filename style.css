@@ -28,7 +28,7 @@ body {
 /*animacao, define etapas de uma animaçao*/
 @keyframes slideright {
     from {
-        background-position: 70000%;
+       background-position: 20000%; /*movimento da paisagem*/
     }
 
     to {
@@ -39,9 +39,9 @@ body {
 .background {
     position: absolute;
     bottom: 0;
-    background-image: url(./img/background.png);
+    background-image: url(./img/fundo.jpg);
     background-repeat: repeat-x;
     animation: slideright 600s infinite linear;
     width: 100%;
-    height: 200px;
+    height: 40%;
 }
